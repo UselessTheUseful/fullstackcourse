@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <%- include('../partials/_header') %>
+
+    <!-- E4 boolean passed -->
+    <% if (locals.boolean) { %>
+        <h3>Heads!</h3>
+    <% } else { %>
+        <h3>Tails!</h3>
+    <% } %>
+
+
+    <%- include('../partials/_footer') %>
+</body>
+</html>

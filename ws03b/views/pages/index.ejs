@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <!-- E3 partial added-->
+    <%- include('../partials/_header') %>
+
+    <!-- E2 message passed -->
+    <%= locals.message %>
+    <ul>
+        <!-- E2 - E5 array of objects passed to the template, iterated/looped through and displayed as list items -->
+        <% for (let i in locals.users) { %>
+            <li>Name: <%= locals.users[i].name %> Age: <%= locals.users[i].age %></li>
+        <% } %>
+    </ul>
+    <%- include('../partials/_footer') %>
+</body>
+</html>
